@@ -30,7 +30,7 @@ let muralList = [
         source: "https://yocoss.github.io/SolarOven/"
     },
     {
-        title: "OUI",
+        title: "Luma Visualizer",
         author: "Claudio O",
         source: "https://claudio9701.github.io/ift-mdt-three/"
     },
@@ -80,7 +80,7 @@ let muralList = [
         source: "https://etienne248.github.io/TreeJs_Point_Cloud_visualisation/"
     },
     {
-        title: "3D Music Visualizer",
+        title: "Plant Mural",
         author: "Hugo J",
         source: "https://hugo-jrlnd.github.io/MDT_project/"
     }
