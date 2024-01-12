@@ -18,16 +18,16 @@ html, body {
 }
 
 #mural {
-    width: 100vw;
-    height: 100vh;
+    width: 100svw;
+    height: 100svh;
 
     display: flex;
     flex-direction: column;
 }
 
 #muralTitle {
-    width: 100vw;
-    height: 8vh;
+    width: 100svw;
+    height: 8svh;
 
     display: flex;
     flex-direction: row;
@@ -40,6 +40,8 @@ html, body {
     margin: 0;
 
     text-decoration: underline;
+    color: var(--primary-color);
+    font-size: 2rem;
 
     line-height: 1.5rem;
     vertical-align: baseline;
@@ -48,35 +50,30 @@ html, body {
     padding: 0;
     margin: 0 0 0 4rem;
 
-    font-weight: 300;
+    font-weight: 400;
+    color: var(--primary-color);
 
     line-height: 1.5rem;
     vertical-align: baseline;
 }
 
 @keyframes transition {
-    0%   {
-        width: 80vw;
-    }
     50%  {
         width: 0;
-    }
-    100% {
-        width: 80vw;
     }
 }
 
 #iframeDiv {
-    width: 80vw;
-    margin: 0 auto;
+    width: 80svw;
+    margin: auto auto;
     animation-duration: 0.5s;
     animation-iteration-count: 1;
     overflow: hidden;
 }
 
 #mural iframe {
-    width: 80vw;
-    height: 80vh;
+    width: 80svw;
+    height: 80svh;
 
     border: 1px solid #919191;
     color: #919191;
@@ -98,14 +95,14 @@ html, body {
 
 @media screen and (max-width: 768px) {
     #mural iframe {
-        width: 90vw;
+        width: 90svw;
     }
 }
 
 
 #muralControls {
-    width: 80vw;
-    height: 12vh;
+    width: 80svw;
+    height: 12svh;
     margin: 0 auto;
 
     display: flex;
