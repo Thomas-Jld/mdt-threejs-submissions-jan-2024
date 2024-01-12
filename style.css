@@ -26,12 +26,14 @@ html, body {
 }
 
 #muralTitle {
-    width: 100svw;
+    width: 80svw;
     height: 8svh;
+    margin: 0 auto;
 
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -48,13 +50,27 @@ html, body {
 }
 #muralTitle h3 {
     padding: 0;
-    margin: 0 0 0 4rem;
+    margin: 0;
 
     font-weight: 400;
     color: var(--primary-color);
 
     line-height: 1.5rem;
     vertical-align: baseline;
+}
+
+@media screen and (max-width: 1024px) {
+
+    #muralTitle {
+        width: 90svw;
+    }
+
+    #muralTitle h2 {
+        font-size: 1.5rem;
+    }
+    #muralTitle h3 {
+        font-size: 1rem;
+    }
 }
 
 @keyframes transition {
@@ -93,8 +109,12 @@ html, body {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     #mural iframe {
+        width: 90svw;
+    }
+
+    #iframeDiv {
         width: 90svw;
     }
 }
@@ -143,4 +163,24 @@ button:hover {
     height: 4rem;
 
     border-radius: 2rem;
+    font-size: 1rem;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    #muralVisitButton {
+        width: 8rem;
+        height: 3rem;
+        border-radius: 3rem;
+    }
+
+    .muralButton {
+        width: 3rem;
+        height: 3rem;
+
+        font-size: 2rem;
+
+        border-radius: 1.5rem;
+    }
 }
