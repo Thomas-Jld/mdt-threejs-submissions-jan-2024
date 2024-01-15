@@ -10,7 +10,7 @@ const muralList = [
     {
         title: "Turbocompressor",
         author: "Augustin B",
-        source: "https://petitkiwi.github.io/BIOS-3D-Animation/"
+        source: "https://augus02.github.io/Portfolio_3D/"
     },
     {
         title: "EEG Visualisation",
