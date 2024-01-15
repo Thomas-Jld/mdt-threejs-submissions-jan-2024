@@ -71,7 +71,7 @@ let muralList = [
     },
     {
         title: "HeartBit",
-        author: "Marine B",
+        author: "Marine R",
         source: "https://marinereynaud25.github.io/HeartBit-ThreeJS/"
     },
     {
@@ -83,12 +83,47 @@ let muralList = [
         title: "Plant Mural",
         author: "Hugo J",
         source: "https://hugo-jrlnd.github.io/MDT_project/"
+    },
+    {
+        title: "Internet of Plants",
+        author: "Matthieu S",
+        source: "https://matthieu-sgi.github.io/Internet-of-Plants-threejs/"
+    },
+    {
+        title: "EEG Visualisation",
+        author: "Hippolyte B",
+        source: "https://hippobo.github.io/3js_eeg_viz/"
+    },
+    {
+        title: "BIOS",
+        author: "Claire L",
+        source: "https://petitkiwi.github.io/BIOS-3D-Animation/"
+    },
+    {
+        title: "Turbocompressor",
+        author: "Augustin B",
+        source: "https://petitkiwi.github.io/BIOS-3D-Animation/"
+    },
+    {
+        title: "Candle",
+        author: "Gaëtan C",
+        source: "https://candle-drab.vercel.app/",
+        github: "https://github.com/GaetanCrd/Candle"
+    },
+    {
+        title: "Thoughts in Motion",
+        author: "Hugo De",
+        source: "https://hdevoille.github.io/ThreeJS_MDT/",
     }
 ]
 
 
 let viewCode = document.getElementById("muralVisitButton");
 viewCode.onclick = () => {
+    if (muralList[currentMural].github) {
+        window.open(muralList[currentMural].github);
+        return;
+    }
     let link = document.getElementById('muralIframe').src;
     let username = link.split('.')[0].split('//')[1];
     let repo = link.split('/').slice(-2, -1)[0]
