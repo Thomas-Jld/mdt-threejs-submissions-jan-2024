@@ -84,6 +84,11 @@ const muralList = [
         source: "https://tooww.github.io/threejs-bioreactor/"
     },
     {
+        title: "Dancing",
+        author: "Cyprien M",
+        source: "https://cyprienmarque.github.io/mdt_3Dproject/"
+    },
+    {
         title: "GCode Viewer",
         author: "Marc-Adrien M",
         source: "https://ram6ces.github.io/gcode-viewer/"
@@ -97,6 +102,11 @@ const muralList = [
         title: "Point Cloud Visualisation",
         author: "Etienne P",
         source: "https://etienne248.github.io/TreeJs_Point_Cloud_visualisation/"
+    },
+    {
+        title: "3D Printing",
+        author: "Tristan R",
+        source: "https://titou0606.github.io/Threejs-3D-printing/"
     },
     {
         title: "HeartBit",
